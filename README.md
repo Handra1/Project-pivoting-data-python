@@ -1,2 +1,7 @@
 # Project-pivoting-data-python
 This project about learning pivoting data in python (In Indonesia)
+
+Lawan dari proses melting adalah pivot. Pada proses melting kita mengembalikan kolom ke baris. Sedangkan untuk proses pivot, kita mengambil masing - masing nilai variabel unik kemudian dijadikan kolom terpisah.
+Salah satu alasan kita menggunakan proses ini adalah untuk membentuk kembali (reshape) dari data analisis ke dalam bentuk report, atau ketika kita menginginkan sebuah prinsip tidy data untuk sebuah observations. Misalnya untuk menyimpan banyak variabel di kolom yang sama. Untuk menggunakan proses pivot, kita bisa gunakan method pivot yang ada di dataframe. Lalu kita input index yang menunjukan bahwa kolom mana yang ingin kita perbaiki. Kemudian kita input kata kunci argumen kolom untuk kolom yang ingin kita pivot ke kolom baru. Hingga akhirnya kita deklarasikan nilai yang akan digunakan untuk mengisi kolom baru yang dibuat dari pivot.
+Tidak semua proses pivot selalu berhasil. Jika ada duplikat data maka akan terjadi jika menggunakan cara yang awal.
+Disini kita gunakan method pivot table sebagai pengganti dari method pivot. Pivot table yaitu sebuah metode yang mengijinkan kita untuk menyediakan parameter tentang bagaimana python melakukan agregasi atau menggabungkan nilai duplikat. Untuk kasus ini, agregasi yang dilakukan yaitu menggabungkan nilai duplikat dengan mengambil rata-rata.
